@@ -1,0 +1,35 @@
+{
+    "name": "Telegram Message Forwarder",
+    "description": "A Simple Telegram UserBot to forward messages from Telegram Account to Custom Ids.",
+    "repository": "https://github.com/iseshu/tg-acc-forwarder",
+    "image": "https://telegra.ph/file/1dae6990adc3af8afb019.jpg",
+    "keywords": [
+        "pyrogram",
+        "telegram",
+        "python"
+    ],
+    "env": {
+        "API_ID": {
+            "description": "Get it from https://my.telegram.org/",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get it from https://my.telegram.org/",
+            "value": ""
+        },
+        "STRING_SESSION": {
+            "description": "Get it from http://link.thisai.tech/BF6re",
+            "value": ""
+        },
+        "IDS": {
+            "description": "I'd to forward messages to Multiple ids can be separated by comma.",
+            "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "stack": "heroku-20"
+}
