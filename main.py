@@ -4,7 +4,7 @@ import os
 
 TARGET = 777000
 
-session_string = os.environ.get('STRING')
+session_string = os.environ.get('STRING_SESSION')
 
 api_id = os.environ.get('API_ID')
 api_hash = os.environ.get('API_HASH')
