@@ -18,8 +18,8 @@ ids = i_ds.split(",")
 async def welcome(client, message):
     msg = message.text
     for id in ids:
-        await app.send_chat_action(id, enums.ChatAction.TYPING)
-        await message.forward(id)
+        await app.send_chat_action(int(id), enums.ChatAction.TYPING)
+        await message.forward(int(id))
 
 
 if __name__ == "__main__":
